@@ -1,6 +1,6 @@
-# Al pushear a main, avisa a los repos consumidores para que sincronicen
-# tokens y logos. Requiere el secret BRAND_SYNC_TOKEN: un PAT fine-grained
-# con acceso a yachaydeep-web Y yachay-deep, permiso Contents: Read & Write.
+# Al pushear a main, avisa a los consumidores para que sincronicen tokens y logos.
+# Secret requerido: BRAND_SYNC_TOKEN (PAT fine-grained, acceso a yachaydeep-web
+# y yachay-deep, permiso Contents: Read & Write).
 name: Notificar consumidores
 
 on:
@@ -12,19 +12,35 @@ jobs:
   dispatch:
     runs-on: ubuntu-latest
     strategy:
-      fail-fast: false   # si un repo falla, igual avisar al otro
+      fail-fast: false
       matrix:
         repo:
           - cvasconezp/yachaydeep-web
           - cvasconezp/yachay-deep
     steps:
+      - name: Validar que el secret existe
+        run: |
+          if [ -z "${{ secrets.BRAND_SYNC_TOKEN }}" ]; then
+            echo "::error::El secret BRAND_SYNC_TOKEN no existe en yachaydeep-brand (Settings → Secrets and variables → Actions)"
+            exit 1
+          fi
+          echo "Secret presente (longitud: ${#TOKEN} caracteres)"
+        env:
+          TOKEN: ${{ secrets.BRAND_SYNC_TOKEN }}
       - name: Disparar sync en ${{ matrix.repo }}
         run: |
-          curl -sf -X POST \
+          code=$(curl -s -o /tmp/resp.json -w "%{http_code}" -X POST \
             -H "Authorization: Bearer ${{ secrets.BRAND_SYNC_TOKEN }}" \
             -H "Accept: application/vnd.github+json" \
             -H "X-GitHub-Api-Version: 2022-11-28" \
             https://api.github.com/repos/${{ matrix.repo }}/dispatches \
-            -d '{"event_type":"brand-updated"}' \
-          && echo "✓ Aviso enviado a ${{ matrix.repo }}" \
-          || { echo "::error::No se pudo avisar a ${{ matrix.repo }} — revisa permisos del BRAND_SYNC_TOKEN"; exit 1; }
+            -d '{"event_type":"brand-updated"}')
+          echo "HTTP $code"
+          cat /tmp/resp.json || true
+          case "$code" in
+            204) echo "✓ Aviso enviado a ${{ matrix.repo }}";;
+            401) echo "::error::401: el valor del secret no es un token valido (¿se guardo el token correcto?)"; exit 1;;
+            403) echo "::error::403: el token no tiene permiso Contents:write sobre ${{ matrix.repo }}"; exit 1;;
+            404) echo "::error::404: el token no tiene acceso al repo ${{ matrix.repo }} (Repository access)"; exit 1;;
+            *)   echo "::error::HTTP $code inesperado"; exit 1;;
+          esac
