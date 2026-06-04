@@ -6,6 +6,7 @@ name: Notificar consumidores
 on:
   push:
     branches: [main]
+  workflow_dispatch:
 
 jobs:
   dispatch:
