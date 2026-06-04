@@ -1,0 +1,20 @@
+/*
+ * @yachaydeep/brand — tokens para Tailwind 4 (@theme)
+ * FUENTE ÚNICA DE VERDAD de la marca. Editar aquí, no en los consumidores.
+ * Consumo: @import "../packages/brand/theme.css"; después de tailwindcss.
+ */
+@theme {
+  /* Color */
+  --color-brand: #1B3A6B;
+  --color-brand-dark: #0F2444;
+  --color-brand-light: #2B5AA0;
+  --color-brand-gold: #E8A838;
+  --color-brand-gold-light: #F5C563;
+  --color-brand-ice: #A8DCE8;
+  --color-brand-ice-light: #D8EFF4;
+
+  /* Tipografía */
+  --font-display: "Bricolage Grotesque", "Instrument Sans", system-ui, sans-serif;
+  --font-sans: "Instrument Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "Spline Sans Mono", ui-monospace, "Cascadia Code", monospace;
+}
