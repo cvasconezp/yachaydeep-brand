@@ -37,3 +37,6 @@ arte lo permita; PNG solo donde se indica.
 5. Revisar hub (navbar/hero/footer) y app (sidebar/login) en producción.
 6. Si cambió el isotipo: regenerar favicons PWA de cada app (manual).
 
+
+> Nota: `logo-hero` usa temporalmente el arte del navbar (sin la línea de ramas).
+> Cuando exportes la mesa "07" (lockup claro + ramas) como `logo-hero.svg`, reemplázalo.
