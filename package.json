@@ -1,6 +1,6 @@
 {
   "name": "@yachaydeep/brand",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "private": false,
   "description": "Design tokens, tipografía y activos de marca de Yachay Deep — fuente única de verdad",
   "license": "UNLICENSED",
@@ -8,7 +8,13 @@
     "type": "git",
     "url": "https://github.com/cvasconezp/yachaydeep-brand.git"
   },
-  "files": ["theme.css", "preset.cjs", "tokens.json", "assets", "STYLE-GUIDE.md"],
+  "files": [
+    "theme.css",
+    "preset.cjs",
+    "tokens.json",
+    "assets",
+    "STYLE-GUIDE.md"
+  ],
   "exports": {
     "./theme.css": "./theme.css",
     "./preset": "./preset.cjs",
