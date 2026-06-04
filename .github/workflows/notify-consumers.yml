@@ -1,0 +1,25 @@
+# Al pushear a main, avisa a los repos consumidores para que sincronicen
+# tokens y logos. Requiere el secret BRAND_SYNC_TOKEN: un PAT fine-grained
+# con permiso Contents: Read & Write sobre yachaydeep-web y yachay-deep.
+name: Notificar consumidores
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  dispatch:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        repo:
+          - cvasconezp/yachaydeep-web
+          - cvasconezp/yachay-deep
+    steps:
+      - name: Disparar sync en ${{ matrix.repo }}
+        uses: peter-evans/repository-dispatch@v3
+        with:
+          token: ${{ secrets.BRAND_SYNC_TOKEN }}
+          repository: ${{ matrix.repo }}
+          event-type: brand-updated
+          client-payload: '{"ref": "${{ github.sha }}"}'
