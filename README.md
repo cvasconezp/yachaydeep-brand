@@ -56,7 +56,8 @@ al actualizar el logo).
 | `yachay-deep` (SaaS Core) | `preset` (Tailwind 3); adoptará `theme.css` al migrar a TW4 |
 | FitBro u otros | Opcional: mismos mecanismos si adoptan la identidad Yachay Deep |
 
-Guía completa de uso de color, tipografía, patrones y voz: [STYLE-GUIDE.md](./STYLE-GUIDE.md).
+Guía completa de uso de color, tipografía, patrones y voz: [STYLE-GUIDE.md](./STYLE-GUIDE.md).  
+Arquitectura de marca y sistema de lockups (Hub + productos): [BRAND-ARCHITECTURE.md](./BRAND-ARCHITECTURE.md) · PDF en [`docs/`](./docs/Yachay_Deep_Hub_Manual_de_Marca_y_Lockups.pdf).
 
 ## Publicar un cambio
 
