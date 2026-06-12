@@ -1,7 +1,7 @@
 import base64, os
-# Generador del Manual de marca y lockups de Yachay Deep Hub.
+# Generador del Manual de marca y lockups de Yachay Deep.
 # Requisitos: pip install weasyprint  (Pango/Cairo en el sistema)
-# Uso: python scripts/build-manual.py  -> genera docs/Yachay_Deep_Hub_Manual_de_Marca_y_Lockups.pdf
+# Uso: python scripts/build-manual.py  -> genera docs/Yachay_Deep_Manual_de_Marca_y_Lockups.pdf
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ASSETS = os.path.join(ROOT, "assets")
 DOCS = os.path.join(ROOT, "docs")
@@ -46,7 +46,7 @@ HTML = f'''<!doctype html><html lang="es"><head><meta charset="utf-8">
 @page {{ size: A4; margin: 0; }}
 @page content {{
   margin: 20mm 18mm 18mm 18mm;
-  @bottom-center {{ content: "Yachay Deep Hub · Manual de marca y lockups · v1.0 · 2026"; font-family: 'Spline Sans Mono', monospace; font-size: 7pt; color: #9aa6b2; }}
+  @bottom-center {{ content: "Yachay Deep · Manual de marca y lockups · v1.1 · 2026"; font-family: 'Spline Sans Mono', monospace; font-size: 7pt; color: #9aa6b2; }}
   @bottom-right {{ content: counter(page); font-family: 'Spline Sans Mono', monospace; font-size: 7pt; color: #9aa6b2; }}
 }}
 * {{ box-sizing: border-box; }}
@@ -120,9 +120,9 @@ td {{ border:1px solid #e3e8ee; padding:7px 9px; vertical-align:top; }}
   <div class="goldbar"></div>
   <img class="logo" src="{LOGO_DARK}">
   <div class="ttl">Sistema de marca<br>y lockups</div>
-  <div class="sub">Arquitectura de marca endosada para Yachay Deep Hub y sus productos</div>
+  <div class="sub">Arquitectura de marca endosada para Yachay Deep y sus productos</div>
   <div class="tagline">Convertimos datos en conocimiento — en el aula, en la empresa y en la comunidad</div>
-  <div class="meta"><span>Manual de marca · v1.0</span><span>Junio 2026 · Yachay Deep Hub</span></div>
+  <div class="meta"><span>Manual de marca · v1.1</span><span>Junio 2026 · Yachay Deep</span></div>
 </div>
 
 <!-- 1. FILOSOFÍA -->
@@ -130,14 +130,14 @@ td {{ border:1px solid #e3e8ee; padding:7px 9px; vertical-align:top; }}
   <div class="eyebrow">01 · Punto de partida</div>
   <div class="h2">Una casa, muchos productos</div>
   <div class="rule"></div>
-  <p>Yachay Deep dejó de ser un solo producto educativo para convertirse en <strong>Yachay Deep Hub</strong>: una casa de productos digitales e inteligencia aplicada. Es el mismo camino de <strong>Facebook → Meta</strong> — la marca crece más allá de su origen y se crea un nivel-empresa que da espacio a todo lo nuevo, sin perder lo construido.</p>
+  <p>Yachay Deep dejó de ser un solo producto educativo para convertirse en una <strong>casa de productos digitales e inteligencia aplicada</strong>. Es el mismo camino de <strong>Facebook → Meta</strong> —la marca crece más allá de su origen—, con una diferencia clave: aquí <strong>conservamos el nombre, Yachay Deep</strong>, y elevamos su significado.</p>
   <p>El reto de marca es el de cualquier casa con varios productos: <strong>conectar sin uniformar</strong>. Que un cliente reconozca el respaldo de Yachay Deep en Core, Kullki o FitBro, pero que cada producto pueda hablarle a su propio público.</p>
   <div class="box gold">
     <div class="lbl">El modelo de referencia</div>
     <p style="margin:0">La Universidad Politécnica Salesiana resuelve esto con un <strong>sistema de lockups endosados</strong>: un logo madre fijo + el nombre de cada carrera + un modificador (sede o modalidad). Yachay Deep adopta esa misma lógica, adaptada a productos en vez de carreras.</p>
   </div>
   <table>
-    <tr><th>UPS (referencia)</th><th>Yachay Deep Hub (equivalente)</th></tr>
+    <tr><th>UPS (referencia)</th><th>Yachay Deep (equivalente)</th></tr>
     <tr><td>Logo madre UPS (fijo)</td><td>Logo madre Yachay Deep (iceberg + wordmark)</td></tr>
     <tr><td>Nombre de la carrera</td><td>Nombre del producto / unidad</td></tr>
     <tr><td>Modificador: «Sede Quito» / «En línea»</td><td>Modificador: sector, estado o «por Yachay Deep Labs»</td></tr>
@@ -151,7 +151,7 @@ td {{ border:1px solid #e3e8ee; padding:7px 9px; vertical-align:top; }}
   <div class="rule"></div>
   <p class="lead">La decisión adoptada es una arquitectura <strong>híbrida con endoso</strong>: marca madre fuerte, con endoso disciplinado en el núcleo y un poco más de aire en los productos de consumo.</p>
 
-  <div class="tier"><div class="tg" style="background:{NAVY}"></div><div><h3>Nivel 1 — Marca madre</h3><p><strong>Yachay Deep Hub.</strong> La empresa. Su logo y nombre encabezan todo. Casi nunca aparece sola al público: aparece <em>endosando</em> a un producto.</p></div></div>
+  <div class="tier"><div class="tg" style="background:{NAVY}"></div><div><h3>Nivel 1 — Marca madre</h3><p><strong>Yachay Deep.</strong> La empresa. Su logo y nombre encabezan todo. Casi nunca aparece sola al público: aparece <em>endosando</em> a un producto.</p></div></div>
   <div class="tier"><div class="tg" style="background:{LIGHT}"></div><div><h3>Nivel 2 — Núcleo (endoso fuerte)</h3><p><strong>Core · Academy · Studio · Research.</strong> Viven de la confianza institucional. Usan <strong>lockup rígido</strong> con el logo madre, igual que una carrera de la UPS.</p></div></div>
   <div class="tier"><div class="tg" style="background:{GOLD}"></div><div><h3>Nivel 3 — Productos de consumo (endoso ligero)</h3><p><strong>Kullki · FitBro · Polla Mundialista.</strong> Le hablan a públicos distintos (comunidad, deporte, entretenimiento). Tienen <strong>identidad propia</strong> + el sello «por Yachay Deep Labs».</p></div></div>
 
@@ -292,5 +292,5 @@ td {{ border:1px solid #e3e8ee; padding:7px 9px; vertical-align:top; }}
 
 open(os.path.join(DOCS,"manual.html"),"w",encoding="utf-8").write(HTML)
 from weasyprint import HTML as WP
-WP(filename=os.path.join(DOCS,"manual.html")).write_pdf(os.path.join(DOCS,"Yachay_Deep_Hub_Manual_de_Marca_y_Lockups.pdf"))
-print("PDF OK", os.path.getsize(os.path.join(DOCS,"Yachay_Deep_Hub_Manual_de_Marca_y_Lockups.pdf")), "bytes")
+WP(filename=os.path.join(DOCS,"manual.html")).write_pdf(os.path.join(DOCS,"Yachay_Deep_Manual_de_Marca_y_Lockups.pdf"))
+print("PDF OK", os.path.getsize(os.path.join(DOCS,"Yachay_Deep_Manual_de_Marca_y_Lockups.pdf")), "bytes")

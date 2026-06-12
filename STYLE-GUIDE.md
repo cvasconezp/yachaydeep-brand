@@ -1,6 +1,6 @@
 # Yachay Deep — Design System (ligero)
 
-> **Arquitectura de marca y lockups** (cómo se relacionan Yachay Deep Hub y sus productos, y cómo se construyen los lockups): ver [BRAND-ARCHITECTURE.md](./BRAND-ARCHITECTURE.md).
+> **Arquitectura de marca y lockups** (cómo se relacionan Yachay Deep y sus productos, y cómo se construyen los lockups): ver [BRAND-ARCHITECTURE.md](./BRAND-ARCHITECTURE.md).
 
 Fuente única de verdad de la marca. Tres archivos:
 

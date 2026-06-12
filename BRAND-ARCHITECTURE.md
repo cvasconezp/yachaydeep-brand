@@ -1,9 +1,9 @@
 # Yachay Deep — Arquitectura de marca y lockups
 
-Cómo se relacionan **Yachay Deep Hub** (la empresa) y sus productos, y cómo se
+Cómo se relacionan **Yachay Deep** (la empresa) y sus productos, y cómo se
 construyen los lockups. Este documento es la **fuente editable**; el PDF maquetado
 para compartir/imprimir está en
-[`docs/Yachay_Deep_Hub_Manual_de_Marca_y_Lockups.pdf`](./docs/Yachay_Deep_Hub_Manual_de_Marca_y_Lockups.pdf)
+[`docs/Yachay_Deep_Manual_de_Marca_y_Lockups.pdf`](./docs/Yachay_Deep_Manual_de_Marca_y_Lockups.pdf)
 y se regenera con [`scripts/build-manual.py`](./scripts/build-manual.py).
 
 Extiende —no reemplaza— a [`STYLE-GUIDE.md`](./STYLE-GUIDE.md) (color, tipografía,
@@ -13,8 +13,7 @@ patrones de UI y voz) y a [`LOGOS.md`](./LOGOS.md) (qué archivo de logo va en c
 
 ## 1. Punto de partida
 
-Yachay Deep dejó de ser un solo producto educativo y pasó a ser **Yachay Deep Hub**:
-una casa de productos digitales e inteligencia aplicada. Es el mismo camino de
+Yachay Deep dejó de ser un solo producto educativo y pasó a ser una **casa de productos digitales e inteligencia aplicada**. Es el mismo camino de
 **Facebook → Meta** — la marca crece más allá de su origen y se crea un nivel-empresa
 que da espacio a lo nuevo sin perder lo construido.
 
@@ -25,7 +24,7 @@ propio público.
 **Modelo de referencia:** el sistema de lockups endosados de la Universidad
 Politécnica Salesiana (logo madre fijo + nombre de carrera + modificador de sede/modalidad).
 
-| UPS (referencia) | Yachay Deep Hub (equivalente) |
+| UPS (referencia) | Yachay Deep (equivalente) |
 |---|---|
 | Logo madre UPS (fijo) | Logo madre Yachay Deep (iceberg + wordmark) |
 | Nombre de la carrera | Nombre del producto / unidad |
@@ -40,7 +39,7 @@ disciplinado en el núcleo y un poco más de aire en los productos de consumo).
 
 | Nivel | Qué es | Marca |
 |---|---|---|
-| **1 — Marca madre** | **Yachay Deep Hub.** La empresa. Casi nunca aparece sola: aparece endosando a un producto. | Logo madre |
+| **1 — Marca madre** | **Yachay Deep.** La empresa. Casi nunca aparece sola: aparece endosando a un producto. | Logo madre |
 | **2 — Núcleo (endoso fuerte)** | **Core · Academy · Studio · Research.** Viven de la confianza institucional. | Lockup rígido (Modo A) |
 | **3 — Consumo (endoso ligero)** | **Kullki · FitBro · Polla Mundialista.** Públicos distintos (comunidad, deporte, entretenimiento). | Identidad propia + sello (Modo B) |
 
@@ -162,7 +161,7 @@ Paleta y tipografía completas en [`STYLE-GUIDE.md`](./STYLE-GUIDE.md) y
 ```bash
 pip install weasyprint        # requiere Pango/Cairo en el sistema
 python scripts/build-manual.py
-# -> docs/Yachay_Deep_Hub_Manual_de_Marca_y_Lockups.pdf
+# -> docs/Yachay_Deep_Manual_de_Marca_y_Lockups.pdf
 ```
 
 El generador lee el logo y la paleta desde este repo, así que el manual se mantiene
