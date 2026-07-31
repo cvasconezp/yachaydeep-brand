@@ -57,3 +57,20 @@ Demo viva: ruta `/design` del sitio corporativo.
 Español directo, primera persona del plural, datos con propósito humano
 ("cada dato representa una persona"). Evitar jerga sin explicar; los números
 siempre con contexto.
+
+
+## Movimiento (motion)
+
+Animaciones sutiles, coherentes en toda la casa. Fuente única: `motion.css`
+(+ `reveal.js` para el reveal on scroll). **Siempre** respetan
+`prefers-reduced-motion`.
+
+- **Entrada de página**: `#root` (o `[data-yd-page]`) hace un fade de opacidad al cargar.
+- **Transición de ruta** (SPA): envolver el contenido ruteado en `.route-fade`.
+- **Reveal on scroll**: marcar con `data-reveal` (un bloque) o `data-reveal-stagger`
+  (cascada de hijos); `reveal.js` los revela al entrar en viewport.
+- **Micro-interacciones**: hover con `-translate-y-1` + sombra en tarjetas; flecha
+  del CTA que se desplaza; botón dorado que aclara.
+
+Tokens: `--yd-dur-fast .35s` · `--yd-dur .5s` · `--yd-dur-slow .6s` ·
+`--yd-ease cubic-bezier(.22,.61,.36,1)`. Animar solo `transform`/`opacity`.

@@ -1,0 +1,54 @@
+/*
+ * @yachaydeep/brand — motion.css
+ * Patrones de MOVIMIENTO canónicos de la casa. Fuente única, igual que color y
+ * tipografía. Sutil por defecto y SIEMPRE respeta `prefers-reduced-motion`.
+ *
+ * Uso en un consumidor:
+ *   1) importar este archivo en la hoja global, y
+ *   2) (para reveal on scroll) cargar reveal.js, que agrega `reveal-ready` al
+ *      <html> y observa los elementos [data-reveal] / [data-reveal-stagger].
+ *
+ * Tokens (se pueden sobreescribir por consumidor):
+ */
+:root {
+  --yd-dur-fast: .35s;
+  --yd-dur: .5s;
+  --yd-dur-slow: .6s;
+  --yd-ease: cubic-bezier(.22, .61, .36, 1);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  /* Entrada de página (una vez, al cargar). Solo opacidad: no afecta a
+     elementos position:fixed dentro de #root. */
+  #root, [data-yd-page] {
+    animation: ydPageIn var(--yd-dur) var(--yd-ease) both;
+  }
+  @keyframes ydPageIn { from { opacity: 0; } to { opacity: 1; } }
+
+  /* Fade de transición entre rutas (SPA) */
+  .route-fade { animation: ydFade var(--yd-dur-fast) var(--yd-ease) both; }
+  @keyframes ydFade { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+
+  /* Reveal on scroll (requiere reveal.js -> html.reveal-ready + .is-visible) */
+  html.reveal-ready [data-reveal] { opacity: 0; transform: translateY(16px); }
+  html.reveal-ready [data-reveal].is-visible {
+    opacity: 1; transform: none;
+    transition: opacity var(--yd-dur-slow) var(--yd-ease), transform var(--yd-dur-slow) var(--yd-ease);
+    transition-delay: var(--reveal-delay, 0ms);
+  }
+
+  /* Reveal con cascada de hijos */
+  html.reveal-ready [data-reveal-stagger] > * { opacity: 0; transform: translateY(14px); }
+  html.reveal-ready [data-reveal-stagger].is-visible > * {
+    opacity: 1; transform: none;
+    transition: opacity .55s var(--yd-ease), transform .55s var(--yd-ease);
+  }
+  html.reveal-ready [data-reveal-stagger].is-visible > *:nth-child(1){transition-delay:0s}
+  html.reveal-ready [data-reveal-stagger].is-visible > *:nth-child(2){transition-delay:.06s}
+  html.reveal-ready [data-reveal-stagger].is-visible > *:nth-child(3){transition-delay:.12s}
+  html.reveal-ready [data-reveal-stagger].is-visible > *:nth-child(4){transition-delay:.18s}
+  html.reveal-ready [data-reveal-stagger].is-visible > *:nth-child(5){transition-delay:.24s}
+  html.reveal-ready [data-reveal-stagger].is-visible > *:nth-child(6){transition-delay:.30s}
+  html.reveal-ready [data-reveal-stagger].is-visible > *:nth-child(7){transition-delay:.36s}
+  html.reveal-ready [data-reveal-stagger].is-visible > *:nth-child(8){transition-delay:.42s}
+}
