@@ -41,7 +41,7 @@ disciplinado en el núcleo y un poco más de aire en los productos de consumo).
 |---|---|---|
 | **1 — Marca madre** | **Yachay Deep.** La empresa. Casi nunca aparece sola: aparece endosando a un producto. | Logo madre |
 | **2 — Núcleo (endoso fuerte)** | **Core · Academy · Studio · Research.** Viven de la confianza institucional. | Lockup rígido (Modo A) |
-| **3 — Consumo (endoso ligero)** | **Kullki · FitBro · Polla Mundialista.** Públicos distintos (comunidad, deporte, entretenimiento). | Identidad propia + sello (Modo B) |
+| **3 — Productos de Labs (endoso ligero)** | **Áncora · Kullki · Horario Inteligente · Polaris** (activos) y las apps en incubación (**Mikuy · Analytics · FitBro · Teseo**). Públicos distintos. | Identidad propia + sello (Modo B) |
 
 > **Regla de oro:** a mayor cercanía con la venta institucional, más rígido el lockup.
 > A mayor cercanía con el consumidor final, más aire para la marca propia — pero el
@@ -93,15 +93,19 @@ logo madre · inventar un divisor distinto.
 
 ## 5. Modo B — Identidad propia endosada (endoso ligero)
 
-Para productos de consumo: **Kullki, FitBro, Polla Mundialista**. Marca propia con
+Para los productos de Labs: **Áncora, Kullki, Horario Inteligente, Polaris** y las apps en incubación. Marca propia con
 personalidad, conectada por un sello discreto **«por Yachay Deep Labs»**. No le venden
 al mismo público que Core, así que necesitan aire.
 
 | Producto | Tono | Endoso |
 |---|---|---|
+| **Áncora** | Docente, práctico, sereno | por Yachay Deep Labs |
 | **Kullki** | Comunitario, kichwa, cálido | por Yachay Deep Labs |
-| **FitBro** | Deporte y bienestar, enérgico | por Yachay Deep Labs |
-| **Polla Mundialista** | Entretenimiento (producto licenciado a terceros) | por Yachay Deep Labs |
+| **Horario Inteligente** | Estudiantil, directo (identificador: 📅) | por Yachay Deep Labs |
+| **Polaris** | Guía del estudiante (identificador: constelación de la Osa Menor) | por Yachay Deep Labs |
+| **Mikuy · Analytics · FitBro · Teseo** | En incubación | en Yachay Deep Labs |
+
+> La Polla Mundialista queda fuera del roster de marca: no aparece en piezas de la casa.
 
 **Cuándo usar Modo B:** cuando el producto le habla a un público distinto del
 institucional y una estética «universidad» le restaría cercanía. La marca respira;
@@ -116,7 +120,7 @@ El hilo que conecta toda la casa. Discreto pero presente en cada producto de Niv
 
 | Aspecto | Regla |
 |---|---|
-| Texto | `por Yachay Deep Labs` (productos de Labs) · `por Yachay Deep` (resto) |
+| Texto | `por Yachay Deep Labs` (productos activos de Labs) · `en Yachay Deep Labs` (en incubación; nunca «un producto de» ni «Powered by») · `por Yachay Deep` (resto) |
 | Tipografía | Mono (Spline Sans Mono), mayúsculas, tracking amplio |
 | Tamaño | ~55–65 % del cuerpo. Acompaña, no compite |
 | Color | Gris medio sobre claro · hielo (`#A8DCE8`) sobre navy |
@@ -148,11 +152,28 @@ Paleta y tipografía completas en [`STYLE-GUIDE.md`](./STYLE-GUIDE.md) y
 | Dorado solo para acción/acento | Fondos extensos dorados |
 | Endoso discreto y consistente | Endoso del mismo tamaño que el nombre |
 | Respetar 1X de área de protección | Texto u otros logos invadiendo el lockup |
-| Modo B con aire para Kullki/FitBro/Polla | Forzar el lockup rígido en productos de consumo |
+| Modo B con aire para Áncora, Kullki y las apps de Labs | Forzar el lockup rígido en productos de Labs |
 
 > **En una frase:** el sistema de la Salesiana es el camino correcto para el núcleo de
-> la marca; dale a Kullki, FitBro y la Polla un par de centímetros más de aire que a una
+> la marca; dale a los productos de Labs un par de centímetros más de aire que a una
 > «carrera», porque no le venden al mismo público.
+
+---
+
+## 9. Color de submarca, incubación y piezas animadas
+
+Reglas acordadas al producir los logos animados, reels y el hero de la casa (oct-2026):
+
+| Regla | Detalle |
+|---|---|
+| **El iceberg nunca se recolorea** | Cuando Yachay Deep aparece junto a una submarca, solo sus **letras** pueden adoptar el acento de la submarca; el ícono (sol, punta, cuerpo, red, monograma YD) conserva siempre sus colores. Sobre blanco, el navy se mantiene y solo cambia el dorado. |
+| **Negativos de submarca** | Sobre fondos oscuros se usan las versiones `-negativo` de `assets/` (Áncora: A blanca + visto naranja; Kullki: verdes aclarados + moneda dorada + palabra blanca). No se ponen en recuadro blanco. |
+| **Incubación con menos protagonismo** | Las apps en incubación no tienen logo propio: se muestran con el **ícono de Yachay Deep \| su emoji** (🍽️ Mikuy, 📊 Analytics, 🏋️ FitBro, 🚀 Teseo), más pequeñas que las activas y con el rótulo «Incubación». |
+| **Unidades sin color propio** | Research, Labs, Studio y Academy usan solo el navy de la casa. En piezas de la casa, **Research Institute** es la base: va destacado, debajo de las demás unidades. |
+| **Cierre de transiciones** | Toda transición Yachay Deep → producto de Labs termina con el isotipo, el nombre y el sello «por Yachay Deep Labs» (como Kullki y Áncora). |
+
+Las piezas animadas (Remotion) viven en el repo `yachaydeep-motion`; los renders,
+en el Dropbox de marca (`Imagen de marca/Videos animados`). No se versionan aquí.
 
 ---
 
