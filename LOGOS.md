@@ -19,6 +19,28 @@ arte lo permita; PNG solo donde se indica.
 | `favicon.svg/png` | Pestaña del navegador | 16–32 px | 1:1, legible a 16 px |
 | `logo-stacked.svg/png` | Login de la app, splash screens | 120–250 px de alto | Lockup vertical (isotipo arriba, wordmark abajo), wordmark navy → fondos claros |
 
+## Submarcas (`assets/core/`, `assets/ancora/`, `assets/kullki/`)
+
+SVG con textos convertidos a trazos (no necesitan fuentes) y fondo transparente,
+salvo el ícono de app y el favicon de Core.
+
+| Carpeta / archivo | Uso |
+|---|---|
+| `core/core-horizontal-*` | Uso principal de Core: web, documentos, menú lateral. Mínimo 120 px de ancho |
+| `core/core-vertical-*` | Portadas, redes, espacios cuadrados |
+| `core/core-logotipo-*` | Solo la palabra, cuando el isotipo ya aparece cerca |
+| `core/core-isotipo-*` | Corazón completo con anillo (48 px o más) |
+| `core/core-isotipo-compacto-*` | Corazón de 12 + 1 puntos (24–47 px) |
+| `core/core-app-icono.svg`, `core/core-favicon.svg` | Ícono de app (512 × 512) y favicon, con fondo azul |
+| `core/png/` | PNG listos y los íconos 16, 32, 48, 180, 192 y 512 px |
+| `ancora/ancora-isotipo-color.svg` · `-negativo.svg` | La A con el visto bueno. Negativo: A blanca, visto naranja |
+| `kullki/kullki-color.svg` · `-negativo.svg` | Socios, fondo común y palabra. Negativo: verdes aclarados, moneda dorada, palabra blanca |
+| `kullki/kullki-isotipo-*` | Solo la ronda de socios |
+
+Sufijos: `-color` sobre blanco o claros · `-negativo` sobre azul Yachay u oscuros ·
+`-mono-negro` una tinta para impresión · `-mono-blanco` una tinta sobre fotos u oscuros.
+Hoja de usos de Core: [`docs/core-hoja-de-usos.png`](./docs/core-hoja-de-usos.png).
+
 ## Espacios que hoy NO se sincronizan (per-app, cambian rara vez)
 
 - **Favicons derivados / PWA**: `favicon.ico`, `favicon-16/32.png`,
