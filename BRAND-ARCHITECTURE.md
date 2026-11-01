@@ -41,7 +41,7 @@ disciplinado en el núcleo y un poco más de aire en los productos de consumo).
 |---|---|---|
 | **1 — Marca madre** | **Yachay Deep.** La empresa. Casi nunca aparece sola: aparece endosando a un producto. | Logo madre |
 | **2 — Núcleo (endoso fuerte)** | **Core · Academy · Studio · Research.** Viven de la confianza institucional. | Lockup rígido (Modo A) |
-| **3 — Productos de Labs (endoso ligero)** | **Áncora · Kullki · Horario Inteligente · Polaris** (activos) y las apps en incubación (**Mikuy · Analytics · FitBro · Teseo**). Públicos distintos. | Identidad propia + sello (Modo B) |
+| **3 — Productos de Labs (endoso ligero)** | **Áncora · Kullki · Horario Inteligente · Polaris · Viveka** (activos) y las apps en incubación (**Mikuy · Analytics · FitBro · Teseo**). Públicos distintos. | Identidad propia + sello (Modo B) |
 
 > **Regla de oro:** a mayor cercanía con la venta institucional, más rígido el lockup.
 > A mayor cercanía con el consumidor final, más aire para la marca propia — pero el
@@ -103,6 +103,7 @@ al mismo público que Core, así que necesitan aire.
 | **Kullki** | Comunitario, kichwa, cálido | por Yachay Deep Labs |
 | **Horario Inteligente** | Estudiantil, directo (identificador: 📅) | por Yachay Deep Labs |
 | **Polaris** | Guía del estudiante (identificador: constelación de la Osa Menor) | por Yachay Deep Labs |
+| **Viveka** | Cívico, alerta (detecta redes coordinadas de bots); coral `#EE5A48` y vino `#7A2430` | por Yachay Deep Labs |
 | **Mikuy · Analytics · FitBro · Teseo** | En incubación | en Yachay Deep Labs |
 
 > La Polla Mundialista queda fuera del roster de marca: no aparece en piezas de la casa.
